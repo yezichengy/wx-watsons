@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "pop-temp": "../../components/pop-temp/pop-temp",
+    "scroll-img":"../../components/scroll-img/scroll-img",
+    "good-sold":"../../components/good-sold/good-sold",
+    "today-onsale":"../../components/today-onsale/today-onsale"
+  }
+}

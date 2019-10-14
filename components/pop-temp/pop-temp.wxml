@@ -1,0 +1,14 @@
+<!--components/pop-temp/pop-temp.wxml-->
+<scroll-view scroll-x="true" enable-flex="true" class="special-items">
+    <view class="special-item" wx:for="{{list}}" wx:key="index">
+      <view>
+      <image src="{{item.over_image_url}}"></image>
+      <text>{{item.promotions[0]}}</text>
+      </view>
+      <view>{{item.item_short_name}}</view>
+      <view>
+      <text>¥{{item.max_price/100}}</text>
+      <text wx:if="{{item.max_market_price>item.max_price}}">¥{{item.max_market_price/100}}</text>
+      </view>
+    </view>
+  </scroll-view>

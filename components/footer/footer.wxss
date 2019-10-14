@@ -1,0 +1,10 @@
+/* components/footer/footer.wxss */
+.footer{
+  height:228rpx;
+  display:flex;
+  color:#919090;
+  font-size:24rpx;
+  align-items:center;
+  flex-flow:column wrap;
+  justify-content:center;
+}

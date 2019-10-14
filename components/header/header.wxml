@@ -1,0 +1,15 @@
+<!--components/header/header.wxml-->
+<view >
+<view class="header" >
+<view class="iconfont icon-21" bindtap="toMine"></view>
+<view   bindtap="toSearch">
+<text class="iconfont icon-sousuo" ></text>
+<text>新人专享</text>
+</view>
+<view class="iconfont icon-gouwuchekong" bindtap="toShoppingCart">
+<text wx:if="{{cN||currentNum||totalNum}}">{{cN?cN:currentNum?currentNum:totalNum?totalNum:'0'}}</text>
+<!-- <text wx:if="{{currentNum}}">{{currentNum}}</text> -->
+</view>
+</view>
+
+</view>

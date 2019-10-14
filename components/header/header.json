@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "footer":"../../components/footer/footer"
+  }
+}

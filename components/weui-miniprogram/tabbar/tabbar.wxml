@@ -1,0 +1,6 @@
+<view class="weui-tabbar {{extClass}}">
+  <!-- 选中的时候往weui-tabbar__item加class:weui-bar__item_on -->
+  <view data-index='{{index}}' bindtap="tabChange" wx:for="{{list}}" class="weui-tabbar__item {{index === current ? 'weui-bar__item_on' : ''}}">
+    <view class="weui-tabbar__label">{{item.text}}</view>
+  </view>
+</view>

@@ -1,0 +1,67 @@
+<!--pages/shoppingcart/shoppingcart.wxml-->
+<view class="shoppingcart">
+  <view class="settlement">
+    <view class="settle-left">
+      <view bindtap="invert">
+        <image src="{{allPick?greenTrue:greenFalse}}" ></image>
+        <text>全选</text>
+      </view>
+      <view bindtap="edit">
+        {{edit?'完成':'编辑'}}
+      </view>
+      <view>
+        合计:<text>{{totalPrice/100}}</text>
+      </view>
+    </view>
+    <view class="settle-right">
+      去结算<text>({{totalNum}})</text>
+    </view>
+  </view>
+  <view class="headTitle">
+    <view wx:for="{{headTitle}}" wx:key="index">
+    <image src="{{item.image_url}}"></image>
+    <text>{{item.title}}</text>
+    </view>
+  </view>
+  <view class="trade-type">
+    <view>
+    <image src="{{allPick?greenTrue:greenFalse}}"  bindtap="invert"></image>
+      <text>屈臣氏国内仓</text>
+    </view>
+    <view>
+      <text>订单已满￥68免运费</text>
+    </view>
+  </view>
+  <block wx:if="{{cartDatas.length>0}}">
+  <view class="cart" wx:for="{{cartDatas}}" wx:key="index">
+    <view class="cart-left">
+      <image src="{{item.item_type?greenTrue:greenFalse}}" bindtap="changeType" data-ind="{{index}}"></image>
+    </view>
+    <view class="cart-mid">
+      <image src="{{item.over_image_url}}"></image>
+    </view>
+    <view class="cart-right">
+      <view class="inner-left">
+        <text>{{item.item_name}}</text>
+        <text>250ml</text>
+        <text>250ml</text>
+        <!-- <text wx:if="{{edit}}" class="del-item" bindtap="delItem" data-ind="{{index}}"> -->
+        <view  class="del-item" wx:if="{{edit}}" bindtap="delItem" data-ind="{{index}}">
+          <image src="{{delIcon}}"></image>
+          <text>删除</text>
+        </view>
+      </view>
+      <view class="inner-right">
+        <text>￥{{item.min_app_price/100}}</text>
+        <text>×{{item.fix_num}}</text>
+        <view class="change-num"  wx:if="{{edit}}">
+          <text bindtap="decNum"  class="{{num1&&item.fix_num>=2?'color-act':'color-disact'}}" data-ind="{{index}}">-</text>
+          <text>{{item.fix_num}}</text>
+          <text bindtap="incNum" data-ind="{{index}}">+</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  </block>
+  <footer></footer>
+</view>

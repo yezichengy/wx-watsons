@@ -1,0 +1,51 @@
+<!--components/face-mask/face-mask.wxml-->
+<view>
+  <!-- 轮播图 -->
+<swiper class="mask-lunbo" indicator-dots = 'true' indicator-color="#ddd" indicator-active-color='#fff' autoplay="true" interval="2500">
+<swiper-item wx:for="{{lunbo}}" wx:key="index"><image src="{{item.image_url}}"></image></swiper-item>
+</swiper>
+<!-- 登陆查看抢购资格 -->
+<view  class="privilege" >
+  <view>
+  登陆查看抢购资格
+  </view>
+   <view>
+  抢购资格可用于购买本活动优惠价商品
+  <text>?</text>
+  </view>
+</view>
+<!-- 特权面膜抢购 -->
+<view class="privilege-buy">
+  <view>
+  <text>特权面膜抢购</text>
+  <text>每款最多限购3件</text>
+  </view>
+  <view></view>
+</view>
+<block wx:if="{{specialItem.length>0}}">
+<view class="specials-item" wx:for="{{specialItem}}" wx:key="index">
+<view class="spe-left"><image src="{{item.image_url}}"></image>
+<view class="spe-hot">
+<view>限量</view>
+<view>{{item.stock_all}}</view>
+</view>
+</view>
+<view class="spe-right">
+<view>{{item.item_short_name}}</view>
+<view>
+<view class="spe-inner">
+<view>
+<text>抢购价￥</text>1<text>￥{{item.market_price/100}}</text>
+</view>
+<view><progress percent="{{100*((item.stock_all-item.stock_left)/item.stock_all)}}" color="#ff6692"></progress></view>
+<view>{{item.stock_all-item.stock_left}}/{{item.stock_all}}</view>
+</view>
+<text>抢购</text>
+</view>
+</view>
+</view>
+</block>
+<!-- 今日秒杀 -->
+<today-onsale list="{{onsaleItem}}"></today-onsale>
+
+</view>

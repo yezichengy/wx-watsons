@@ -1,0 +1,142 @@
+/* components/face-mask/face-mask.wxss */
+.mask-lunbo,.mask-lunbo image{
+  height:250rpx;
+  width:750rpx;
+}
+.privilege{
+  height:160rpx;
+  margin:20rpx 20rpx 30rpx 30rpx;
+  box-sizing:border-box;
+  background:url('https://asset.watsons.com.cn/act/static/images/mask-center/442af5844f137440b999ff5c7.png');
+  background-size:100% 100%;
+  color:#4a4a4a;
+  padding-left:23%;
+  display:flex;
+  flex-flow:column wrap;
+  justify-content:center;
+}
+.privilege>view:nth-of-type(1){
+  font-size:32rpx;
+  font-weight:bold;
+  margin-bottom:20rpx;
+  text-decoration:underline;
+}
+.privilege>view:nth-of-type(2){
+  font-size:24rpx;
+}
+.privilege>view:nth-of-type(2)>text{
+  background:#D9D9D9;
+  padding:0 8rpx;
+  border-radius:50%;
+  color:#fff;
+}
+.privilege-buy{
+  padding:0 30rpx;
+  display:flex;
+  height:150rpx;
+  flex-flow:row nowrap;
+  justify-content:space-between;
+  align-items:center;
+}
+.privilege-buy>view:nth-of-type(1){
+  height:100%;
+  display:flex;
+  flex-flow:column wrap;
+  justify-content:center;
+  font-size:24rpx;
+  color:#919090;
+}
+.privilege-buy>view:nth-of-type(1)>text:nth-of-type(1){
+  font-size:40rpx;
+  font-weight:bold;
+  color:#000;
+  margin-bottom:10rpx;
+}
+.privilege-buy>view:nth-of-type(2){
+  width:380rpx;
+  height:40rpx;
+  background:url('https://asset.watsons.com.cn/act/static/images/mask-center/f32ab5c224e50c8935e6b23ec.png');
+  background-size:100% 100%;
+}
+.specials-item{
+  height:305rpx;
+  font-size:24rpx;
+  color:#dad8d8;
+  padding:20rpx 30rpx;
+  display:flex;
+  flex-flow:row nowrap;
+  justify-content:space-between;
+  box-sizing:border-box;
+}
+.spe-left{
+  width:260rpx;
+  height:260rpx;
+  position:relative;
+}
+.spe-hot{
+  position:absolute;
+  top:0;
+  left:0;
+}
+.spe-hot>view{
+  padding:4rpx 10rpx;
+  background:#ff6292;
+  color:#fff;
+  text-align:center;
+}
+.spe-hot>view:nth-of-type(1){
+  margin-bottom:2rpx solid gray;
+}
+.spe-left image{
+  width:100%;
+  height:100%;
+}
+.spe-right{
+  box-sizing:border-box;
+  width:405rpx;
+  display:flex;
+  flex-flow:column wrap;
+  justify-content:space-between;
+}
+.spe-right>view:nth-of-type(1){
+  color:#919090;
+  max-width:400rpx;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+.spe-right>view:nth-of-type(2){
+  display:flex;
+  flex-flow:row nowrap;
+  justify-content:space-between;
+  align-items:flex-end;
+}
+.spe-right>view:nth-of-type(2)>text:nth-of-type(1){
+  padding:4rpx 20rpx;
+  font-size:30rpx;
+  color:#fff;
+  background:#ff6292;
+  border-radius:10rpx;
+}
+.spe-inner>view:nth-of-type(1){
+  font-size:50rpx;
+  font-weight:bold;
+  color:#ff6292;
+}
+.spe-inner>view:nth-of-type(1)>text:nth-of-type(1){
+  color:#ff6292;
+  font-size:24rpx;
+  font-weight:bold;
+  font-style:italic;
+}
+.spe-inner>view:nth-of-type(1)>text:nth-of-type(2){
+  font-size:24rpx;
+  margin-left:10rpx;
+  color:#dad8d8;
+}
+.spe-inner>view:nth-of-type(2)>progress{
+  transform:skew(-30deg);
+  width:220rpx;
+  margin-top:20rpx;
+  margin-bottom:10rpx;
+}

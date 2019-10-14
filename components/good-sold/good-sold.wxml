@@ -1,0 +1,13 @@
+<!--components/good-sold/good-sold.wxml-->
+<view class="good-sold">
+  <view class="gs-item" wx:for="{{list}}" wx:key="index" bindtap="toDetail" data-item="{{item}}">
+    <image src="{{item.over_image_url}}"></image>
+    <text >{{item.item_long_name}}</text>
+    <text wx:if="{{item.promotions}}">{{item.promotions[0]}}</text>
+    <view>
+      <text>¥{{item.min_price/100}}</text>
+      <text>¥{{item.max_price/100}}</text>
+      <text class="iconfont icon-gouwuchekong" catchtap="addToCart" data-datas="{{item}}"></text>
+    </view>
+  </view>
+</view>

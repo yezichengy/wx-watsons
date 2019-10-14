@@ -1,0 +1,98 @@
+/* pages/mine/mind.wxss */
+.tip{
+  color:#919090;
+  font-size:26rpx;
+  margin-bottom:10rpx;
+}
+.tip::before{
+  border:2rpx soid #919090;
+  border-radius:50%;
+  padding:2rpx 6rpx;
+  display:inline-block;
+  content:"!";
+}
+.login{
+  padding:60rpx;
+}
+.phone>input{
+  height:94rpx;
+  padding:30rpx;
+  background:#fcfcfc;
+  margin-bottom:30rpx;
+  box-sizing:border-box;
+  margin-top:10rpx;
+}
+.phone>view{
+  display:flex;
+  flex-flow:row nowrap;
+  justify-content:space-between;
+}
+.phone>view>input{
+  height:94rpx;
+  width:364rpx;
+  padding:30rpx;
+  background:#fcfcfc;
+  box-sizing:border-box;
+}
+.phone>view>image{
+  height:90rpx;
+  width:214rpx;
+  box-sizing:border-box;
+}
+.checks{
+  display:flex;
+  flex-wrap:nowrap;
+  align-items:center;
+  justify-content:space-between;
+  margin:30rpx 0;
+}
+.checks>input{
+  height:90rpx;
+  width:364rpx;
+  background:#fcfcfc;
+  font-size:30rpx;
+  padding:30rpx;
+  box-sizing:border-box;
+}
+.checks>text{
+  height:90rpx;
+  width:214rpx;
+  box-sizing:border-box;
+  background:#ff6692;
+  color:#fff;
+  display:inline-block;
+  text-align:center;
+  line-height:90rpx;
+  border-radius:10rpx;
+}
+.checkbox{
+  font-size:24rpx;
+  color:#4a4a4a;
+  display:flex;
+  flex-wrap:nowrap;
+  align-items:center;
+  justify-content:flex-start;
+}
+.checkbox image{
+  width:36rpx;
+  height:36rpx;
+}
+.checkbox>text:nth-of-type(2n){
+  color:#ff6692;
+}
+.btn{
+  color:#fff;
+  background:#ff6692;
+  font-size:30rpx;
+  width:394rpx;
+  height:90rpx;
+  box-sizing:border-box;
+  text-align:center;
+  line-height:90rpx;
+  border-radius:50rpx;
+  margin:0 auto;
+}
+input{
+  border:2rpx solid #eee;
+  border-radius:10rpx;
+}

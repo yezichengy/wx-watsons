@@ -1,0 +1,55 @@
+/* pages/search/search.wxss */
+@import '../../style/font/iconfont.wxss';
+.header{
+  display:flex;
+  height:104rpx;
+  width:100%;
+  box-sizing:border-box;
+  color:#4e4e4e;
+  flex-flow:row nowrap;
+  align-items:center;
+  padding:20rpx 30rpx;
+}
+.search-box{
+  height:100%;
+  font-family: "Helvetica Neue",Helvetica,Arial,Sans-serif;
+  flex:1;
+  box-sizing:border-box;
+  position:relative;
+  margin-right:30rpx;
+  background:#f2f2f2;
+  border-radius:36rpx;
+  padding:0 60rpx;
+}
+.header>view:nth-of-type(2){
+  font-size:32rpx;
+}
+.search{
+  height:100%;
+  font-size:24rpx;
+  margin-right:10rpx;
+}
+.icon-sousuo{
+  position:absolute;
+  top:13rpx;
+  left:16rpx;
+  font-size:34rpx;
+}
+.del{
+  position:absolute;
+  top:8rpx;
+  right:20rpx;
+  font-size:40rpx;
+  color:darkblue;
+  padding:4rpx 20rpx 4rpx 10rpx;
+}
+/* 搜索结果 */
+.search-result view{
+  height:90rpx;
+  font-size:30rpx;
+  color:#4e4e4e;
+  margin:0 30rpx;
+  padding-left:30rpx;
+  border-bottom:2rpx solid #eee;
+  line-height:90rpx;
+}

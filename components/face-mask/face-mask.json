@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "today-onsale":"../../components/today-onsale/today-onsale"
+  }
+}

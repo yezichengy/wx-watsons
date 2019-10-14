@@ -1,0 +1,67 @@
+/* components/good-sold/good-sold.wxss */
+@import "../../style/font/iconfont";
+.good-sold{
+  background:#5f0daf;
+  overflow:auto;
+  padding-bottom:10rpx;
+}
+.gs-item{
+  width:238rpx;
+  height:372rpx;
+  float:left;
+  margin-left:9rpx;
+  margin-top:9rpx;
+  position:relative;
+  background:#fff;
+}
+.gs-item image{
+  width:228rpx;
+  height:228rpx;
+  margin-left:10rpx;
+}
+.gs-item>text:nth-of-type(2){
+  padding:0 8rpx;
+  background:#ff4449;
+  font-size:24rpx;
+  color:#fff;
+  border-top-right-radius:16rpx;
+  border-bottom-right-radius:16rpx;
+  position:absolute;
+  top:190rpx;
+  left:0;
+}
+.gs-item>text:nth-of-type(1){
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:2;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  word-break:break-all;
+  word-wrap:break-word;
+  font-size:24rpx;
+  color:#444;
+  padding:0 10rpx;
+}
+.gs-item>view{
+  margin-top:16rpx;
+  font-size:30rpx;
+  color:#ff1f32;
+  display:flex;
+  flex-flow:row nowrap;
+  align-items:center;
+  justify-content:space-around;
+  padding:0 10rpx;
+}
+.gs-item>view text:nth-of-type(2){
+  flex:1;
+  margin-left:10rpx;
+  color:#999;
+  font-size:24rpx;
+  text-decoration:line-through;
+}
+.gs-item>view text:nth-of-type(3){
+  padding:4rpx 4rpx;
+  background:#ff4449;
+  border-radius:50%;
+  color:#fff;
+}

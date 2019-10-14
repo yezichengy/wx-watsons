@@ -1,0 +1,5 @@
+<!--components/scroll-img/scroll-img.wxml-->
+<scroll-view scroll-x="true" enable-flex="true" class="scroll-img">
+  <image wx:for="{{list}}" wx:key="index" src="{{item.image_url}}">
+  </image>
+</scroll-view>

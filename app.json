@@ -1,0 +1,19 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/search/search",
+    "pages/logs/logs",
+    "pages/vip/vip",
+    "pages/mine/mine",
+    "pages/find/find",
+    "pages/shoppingcart/shoppingcart",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "屈臣氏官方商城",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

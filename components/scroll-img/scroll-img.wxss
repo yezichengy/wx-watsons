@@ -1,0 +1,11 @@
+/* components/scroll-img/scroll-img.wxss */
+.scroll-img{
+  white-space:nowrap;
+  margin-bottom:-8rpx;
+  width:100%;
+  height:220rpx;
+}
+.scroll-img image{
+  width:200rpx;
+  height:220rpx;
+}

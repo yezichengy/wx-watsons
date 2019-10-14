@@ -1,0 +1,107 @@
+/* components/today-onsale/today-onsale.wxss */
+.dayonsale {
+  height: 410rpx;
+  width: 100%;
+  margin-top: -8rpx;
+  padding:20rpx 40rpx;
+  box-sizing:border-box;
+}
+.countdown{
+  font-size:24rpx;
+  color:#666;
+  display:flex;
+  align-items:center;
+  flex-flow:nowrap row;
+  justify-content:space-between;
+}
+.countdown>view:nth-of-type(1)>text{
+  color:#fff;
+  background:#000;
+  padding:0 6rpx;
+}
+.countdown>view:nth-of-type(1)>text:nth-of-type(1){
+  font-weight:bold;
+  color:#000;
+  background:#fff;
+  padding:0;
+  font-size:30rpx;
+  margin-right:10rpx;
+}
+.countdown>view:nth-of-type(2){
+  color:#000;
+  font-size:26rpx;
+}
+.special-items{
+  margin-top:20rpx;
+  width:auto;
+  display:flex;
+  flex-flow:nowrap row;
+  height:320rpx;
+  font-size:24rpx;
+  overflow:auto;
+  box-sizing:border-box;
+  background:#fff;
+}
+.special-item{
+  height:100%;
+  border-top-left-radius:10rpx;
+  border-top-right-radius:10rpx;
+  width:194rpx;
+  margin-right:8rpx;
+  box-sizing:border-box;
+  display:flex;
+  flex-flow:wrap column;
+  justify-content:space-between;
+  border:2rpx solid #eaeaea;
+  padding-bottom:20rpx;
+}
+.special-item>view:nth-of-type(1){
+  position:relative;
+}
+.special-item>view:nth-of-type(1)::after{
+  background:rgba(0,0,0,0.02);
+  content:'';
+  left:0;
+  top:0;
+  position:absolute;
+  width:92%;
+  height:100%;
+}
+.special-item image{
+  width:190rpx;
+  height:190rpx;
+  margin-bottom:10rpx;
+}
+.special-item>view:nth-of-type(1){
+  position:relative;
+}
+.special-item>view:nth-of-type(1) text{
+  position:absolute;
+  background:#fc487b;
+  padding:0 6rpx 4rpx 6rpx;
+  color:#fff;
+  font-weight:bold;
+  left:0;
+  bottom:0;
+  font-size:24rpx;
+  border-top-right-radius:10rpx;
+}
+.special-item>view:nth-of-type(2){
+color:#1c1c1c;
+overflow:hidden;
+text-overflow:ellipsis;
+white-space:nowrap;
+font-weight:bold;
+max-width:194rpx;
+margin:0 8rpx;
+}
+.special-item>view:nth-of-type(3)>text:nth-of-type(1){
+  color:#fc487b;
+  font-size:30rpx;
+  margin:0 8rpx;
+}
+.special-item>view:nth-of-type(3)>text:nth-of-type(2){
+  color:#919090;
+  font-size:24rpx;
+  text-decoration:line-through;
+}

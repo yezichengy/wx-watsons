@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "header": "../../components/header/header",
+    "news":"../../components/news/news",
+  "footer":"../../components/footer/footer",
+  "face-mask":"../../components/face-mask/face-mask",
+  "tidal":"../../components/tidal/tidal",
+  "global":"../../components/global/global",
+  "mp-loading": "../../components/weui-miniprogram/loading/loading",
+  "tab-bar":"../../components/tab-bar/tab-bar"
+  }
+}

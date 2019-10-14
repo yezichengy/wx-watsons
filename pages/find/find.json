@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "face-mask": "../../components/face-mask/face-mask"
+  }
+}

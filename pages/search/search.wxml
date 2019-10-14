@@ -1,0 +1,16 @@
+<!--pages/search/search.wxml-->
+<view>
+  <view class="header">
+    <view class="search-box">
+      <input placeholder="新人专享" class="search" bindinput="search" value="{{nowSearch}}"></input>
+      <text class="iconfont icon-sousuo"></text>
+      <text wx:if="{{result.length>0}}" class="del" bindtap="del">×</text>
+    </view>
+    <view bindtap="toBack">取消</view>
+  </view>
+  <view class="search-result">
+    <view wx:for="{{result}}" wx:key="index">
+      {{item.word}}
+    </view> 
+  </view>
+</view>

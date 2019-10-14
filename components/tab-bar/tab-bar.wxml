@@ -1,0 +1,4 @@
+<!--components/tab-bar/tab-bar.wxml-->
+<view class="nav">
+  <text bindtap="checkoutNav" wx:for="{{list}}" wx:key="index" data-ind="{{index}}" class="{{index==currentIndex?'active':''}}">{{item.title}}</text>
+</view>

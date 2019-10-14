@@ -1,0 +1,36 @@
+/**index.wxss**/
+@import '../../style/font/iconfont.wxss';
+.head-nav{
+  position:fixed;
+  left:0;
+  right:0;
+  top:0;
+  background:#fff;
+  z-index:9999;
+}
+.nav{
+  height:80rpx;
+  box-sizing:border-box;
+  display:flex;
+  flex-flow:nowrap row;
+  align-items:center;
+  justify-content:space-between;
+  font-family: "Helvetica Neue",Helvetica,Arial,Sans-serif;
+  /* position:fixed;
+  left:0;
+  right:0;
+  bottom:0; */
+}
+.nav>text{
+  flex:1;
+  color:#000;
+  font-size:30rpx;
+  font-weight:bold;
+  line-height:80rpx;
+  margin:0 30rpx;
+  text-align:center;
+}
+.nav>.active{
+  color:#ff6692;
+  border-bottom:6rpx solid #ff6692;
+}

@@ -1,0 +1,17 @@
+<!--components/tidal/tidal.wxml-->
+<view>
+<!-- 轮播图 -->
+<swiper class="tidal-lunbo" indicator-dots="true" indicator-color="gray" indicator-active-color="#fff" autoplay="true" interval="2500" >
+  <swiper-item wx:for="{{lunbo}}" wx:key="index"><image src="{{item.image_url}}"></image></swiper-item>
+</swiper>
+<!-- 快递 -->
+<view class="translate">
+  <image src="{{datas[0].content.bg.image}}"></image>
+</view>
+<!-- 今日秒杀 -->
+<today-onsale list="{{todayOnsale}}" ></today-onsale>
+<!-- 今日好货 -->
+<view class="today-goods">
+  <image src="{{datas[3].content.bg.image}}"></image>
+</view>
+</view>

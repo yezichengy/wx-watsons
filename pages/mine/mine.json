@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "global": "../../components/global/global",
+    "footer":"../../components/footer/footer"
+  },
+  
+   "navigationBarTitleText":"登陆/注册"
+  
+}

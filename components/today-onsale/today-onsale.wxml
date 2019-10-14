@@ -1,0 +1,27 @@
+<!--components/today-onsale/today-onsale.wxml-->
+<view class="dayonsale" style="background:url({{background.bg}}) #fff;background-size:100%;background-repeat:no-repeat;">
+  <view class="countdown">
+    <view>
+    <text>今日秒杀</text>
+    <text>{{hours[1]?hours:'0'+hours}}</text> :
+    <text>{{minutes[1]?minutes:'0'+minutes}}</text> :
+    <text>{{seconds[1]?seconds:'0'+seconds}}</text>
+    </view>
+    <view>
+    更多好货>
+    </view>
+  </view>
+  <scroll-view scroll-x="true" enable-flex="true" class="special-items">
+    <view class="special-item" wx:for="{{list}}" wx:key="index">
+      <view>
+      <image src="{{item.image_url}}"></image>
+      <text>必抢</text>
+      </view>
+      <view>{{item.item_short_name}}</view>
+      <view>
+      <text>¥{{item.promotion_price/100}}</text>
+      <text wx:if="{{item.market_price}}">¥{{item.market_price/100}}</text>
+      </view>
+    </view>
+  </scroll-view>
+</view>

@@ -1,0 +1,29 @@
+<!--pages/mine/mind.wxml-->
+<view>
+  <view class="login">
+    <text class="tip">商城全新版本上线,手机登陆更安全哦</text>
+    <view class="phone">
+      <input placeholder="输入手机号"></input>
+      <view>
+      <input placeholder="输入图片验证码"></input>
+      <image src="https://h5.watsons.com.cn/imgCode"></image>
+      </view>
+    </view>
+    <view class="checks">
+      <input placeholder="输入验证码"></input>
+      <text>发送验证码</text>
+    </view>
+    <view class="checkbox">
+    <image class="active" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAgVBMVEUAAABAzsNA0cQ9z8E+zsA9z8E9z8E+zsA9z8E+zsE+z8E9z8E+zsE/0MJE0sM9z8A+z8E9zsD///9Z1cnm+fdDz8L7/v5H0cPt+vnN8u9g18tS08dL0sX9/v7w+/rc9vTX9fLR8/DI8e2o6eKg5+B/39Z43dOF4Ne/7+qv6+WI4dgnpbVyAAAAEXRSTlMARDjA/PPu59mtpZmDbSLDkFnxnlUAAAEdSURBVDjLndXZcoMgGIZhBFcgms/UtHZf7XL/F1jHZAy7kPf4GQZG/CFmVHJWF0XNuKQkWCYqKFUi81LKYMXcy7cNnDWtbbMSnkprL7sc3vKdbvcIttfWxUbK2lm+hfN1322Jzcr2jBtE1JwsRVR0wV0c7pbTIbJsxiIoHsYDzokZV0F704/rHbwcz2dfHpUjymgLSbjfHnQLTljIvqoWjNQhewu1mhRYmzR7Z1oUCv7tPzX7ZlgUyjb+ni7aZVGrB/xe9b3LghEOTX8s9rkfB1hx/aN8HWfts5CEwtSzfR88N7oy9dFjK/uKTj4L4bj808/gv/yEISqW9MOmjIKkIZMyvtIGY/rITR/m4Wci8QGyo51NO3rto5n0HP8DkktmWXwdeqcAAAAASUVORK5CYII="></image>
+    <image display="none"></image>
+    <text>登陆/注册即同意</text>
+    <text>用户协议</text>
+     <text>和</text>
+     <text>隐私政策</text>
+    </view>
+  </view>
+  <view class="btn">
+  登陆/注册
+  </view>
+  <footer></footer>
+</view>

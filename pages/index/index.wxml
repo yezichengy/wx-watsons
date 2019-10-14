@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<view class="container">
+<view class="head-nav">
+<!-- 头部 -->
+<header currentNum="{{totalNum}}"></header>
+<!-- 导航 -->
+<view class="nav">
+  <text bindtap="checkoutNav" wx:for="{{list}}" wx:key="index" data-ind="{{index}}" class="{{index==currentIndex?'active':''}}">{{item.title}}</text>
+</view>
+</view>
+<!-- 内容 -->
+<news wx:if="{{currentIndex==0}}" bind:delieve="getNum"></news>
+<face-mask wx:if="{{currentIndex==1}}"></face-mask>
+<tidal wx:if="{{currentIndex==2}}"></tidal>
+<global wx:if="{{currentIndex==3}}"></global>
+<!-- 页尾 -->
+<footer></footer>
+<!-- <mp-loading type="circle"></mp-loading> -->
+<!-- <mp-loading type="circle" tips="{{tips}}"></mp-loading> -->
+<!-- <mp-loading duration="{{900}}" ext-class="demo0" type="dot-gray" show="{{show}}" animated="{{animated}}"></mp-loading> -->
+<!-- <mp-loading type="dot-white" ext-class="demo1"></mp-loading> -->
+</view>

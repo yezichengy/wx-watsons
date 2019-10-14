@@ -1,0 +1,24 @@
+<!--components/global/global.wxml-->
+<view>
+<view class="head-pic">
+<image src="{{datas[0].content.image}}"></image>
+</view>
+<scroll-view scroll-x="true" class="special-items">
+    <view class="special-item" wx:for="{{todayOnsale}}" wx:key="index">
+      <view>
+      <image src="{{item.over_image_url}}"></image>
+      <text>{{item.specials}}</text>
+      </view>
+      <view><text>{{item.item_short_name}}</text></view>
+      <view>
+      <text>¥{{item.min_price/100}}</text>
+      <text wx:if="{{item.max_market_price>item.min_price}}">¥{{item.min_price/100}}</text>
+      </view>
+    </view>
+  </scroll-view>
+  <view class="global-pic">
+    <image src="{{datas[2].content.bg.image}}"></image>
+    <image src="{{datas[3].content.bg.image}}"></image>
+    <image src="{{datas[4].content.image}}"></image>
+  </view>
+</view>
