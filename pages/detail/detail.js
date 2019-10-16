@@ -88,7 +88,15 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    let cartData = wx.getStorageSync('cartData')
+    let tempNum = 0
+    for (let i = 0; i < cartData.length; i++) {
+      tempNum += cartData[i].fix_num
+    }
+    this.setData({
+      datas: this.data.datas
+      , num: tempNum
+    })
   },
 
   /**

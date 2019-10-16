@@ -4,7 +4,7 @@
 <image src="{{datas[0].content.image}}"></image>
 </view>
 <scroll-view scroll-x="true" class="special-items">
-    <view class="special-item" wx:for="{{todayOnsale}}" wx:key="index">
+    <view class="special-item" wx:for="{{todayOnsale}}" wx:key="index" bindtap="toDetail" data-item="{{item}}">
       <view>
       <image src="{{item.over_image_url}}"></image>
       <text>{{item.specials}}</text>

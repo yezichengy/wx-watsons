@@ -1,6 +1,7 @@
 {
   "usingComponents": {
-    "footer":"../../components/footer/footer"
+    "footer":"../../components/footer/footer",
+    "good-sold":"../../components/good-sold/good-sold"
   }
   ,"navigationBarTitleText":"购物车"
 }

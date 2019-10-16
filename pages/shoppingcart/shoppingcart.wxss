@@ -207,3 +207,32 @@
   color:#ff6692;
   font-size:30rpx;
 }
+.noitem{
+  background:#f4f4ee;
+  color:#dad8d8;
+  font-size:30rpx;
+  display:flex;
+  flex-flow:wrap column;
+  padding:200rpx 0 50rpx 0;
+  align-items:center;
+}
+.noitem>image{
+  height:220rpx;
+  width:172rpx;
+}
+.noitem>view:nth-of-type(1){
+  height:34rpx;
+  margin-bottom:100rpx;
+  margin-top:40rpx;
+  text-align:center;
+}
+.noitem>view:nth-of-type(2){
+  height:100rpx;
+  margin-top:80rpx;
+  width:250rpx;
+  margin:0 auto;
+  background:#ff6692;
+  color:#fff;
+  line-height:100rpx;
+  text-align:center;
+}

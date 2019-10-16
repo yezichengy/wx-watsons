@@ -8,6 +8,7 @@ Page({
     tips: '请稍后',
     show: true,
     animated: true,
+    userInfo:{},
     totalNum:0,
     list:[
       { title: '今日推荐' }, { title: '面膜中心' }, { title: '潮流购物' }, { title: '购全球' }
@@ -20,6 +21,10 @@ Page({
         show: !this.data.show
       })
     }, 2000)
+    let userData = wx.getStorageSync('user_1') || {}
+    this.setData({
+      userInfo:userData
+    })
     // console.log(wx.getStorageSync('cartData'))
     // if(wx.getStorageSync('cartData')){
     //   let cartData = JSON.stringify({
@@ -33,6 +38,20 @@ Page({
     //   })
     //   wx.setStorage('cartData',cartData)
     // }
+  },
+  onShow(){
+    let userData = wx.getStorageSync('user_1') || {}
+    this.setData({
+      userInfo: userData
+    })
+    let cartData = wx.getStorageSync('cartData') || []
+    let num = 0;
+    cartData.forEach(item=>{
+      num+=item.fix_num
+    })
+    this.setData({
+      totalNum:num
+    })
   },
   onUnload() {
     clearInterval(this.timer)

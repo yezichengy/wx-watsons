@@ -1,12 +1,14 @@
 <!--pages/mine/mind.wxml-->
 <view>
-  <view class="login">
+  
+<block wx:if="{{!userInfo.nickName}}">
+<view class="login">
     <text class="tip">商城全新版本上线,手机登陆更安全哦</text>
     <view class="phone">
       <input placeholder="输入手机号"></input>
       <view>
       <input placeholder="输入图片验证码"></input>
-      <image src="https://h5.watsons.com.cn/imgCode"></image>
+      <image src="https://h5.watsons.com.cn/imgCode" bindtap="updatePic"></image>
       </view>
     </view>
     <view class="checks">
@@ -25,5 +27,21 @@
   <view class="btn">
   登陆/注册
   </view>
+  <!-- <view class="btn" bindtap="toLogin">
+  微信登陆
+  </view> -->
+  <button wx:if="{{canIUse}}" class="btn" bindtap="toLogin" open-type="getUserInfo" bindgetuserinfo="getUserData">微信登陆</button >
+  <button wx:else class="btn">请升级微信版本</button>
+  <!-- <open-data type="userNickName" ></open-data>
+<open-data type="userAvatarUrl"></open-data> -->
+<!-- <open-data type="userGender" lang="zh_CN"></open-data> -->
+</block>
+<block wx:else>
+  <view class="userinfo">
+  <text bindtap="logout">注销</text>
+    <image src="{{userInfo.avatarUrl}}"></image>
+    <view>{{userInfo.nickName}}</view>
+  </view>
+</block>
   <footer></footer>
 </view>

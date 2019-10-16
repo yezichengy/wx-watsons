@@ -97,14 +97,14 @@
 <view class="populars">
   <image src="{{preEle[12].content.image}}"></image>
   <image src="{{preEle[13].content.bg.image}}"></image>
-  <good-sold list="{{populars1}}"></good-sold>
+  <good-sold list="{{populars1}}" bind:myevent="receive"  currentNum="{{totalNum}}"></good-sold>
   <image src="{{preEle[15].content.bg.image}}"></image>
-  <good-sold list="{{populars2}}"></good-sold>
+  <good-sold list="{{populars2}}" bind:myevent="receive"  currentNum="{{totalNum}}"></good-sold>
   <image src="{{preEle[17].content.bg.image}}"></image>
-  <good-sold list="{{populars3}}"></good-sold>
+  <good-sold list="{{populars3}}" bind:myevent="receive"  currentNum="{{totalNum}}"></good-sold>
   <image src="{{preEle[19].content.bg.image}}"></image>
   <image src="{{preEle[21].content.bg.image}}"></image>
-  <good-sold list="{{populars4}}"></good-sold>
+  <good-sold list="{{populars4}}" bind:myevent="receive"  currentNum="{{totalNum}}"></good-sold>
 </view>
 <!-- 好货推荐 -->
 <image class="goods-to" src="https://image.watsons.com.cn//upload/8c3676f5.jpg?x-oss-process=image/quality,q_80/format,webp"></image>

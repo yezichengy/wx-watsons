@@ -40,6 +40,12 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    toDetail(ev) {
+      // console.log(ev.currentTarget.dataset.item)
+      let strData = JSON.stringify(ev.currentTarget.dataset.item)
+      wx.navigateTo({
+        url: '../../pages/detail/detail?data=' + strData
+      })
+    },
   }
 })

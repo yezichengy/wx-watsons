@@ -14,7 +14,8 @@ Component({
           cN:newVal
         })
       }
-    }
+    },
+    userimage:String
   },
 
   /**
@@ -32,6 +33,19 @@ Component({
       }
       this.setData({
         totalNum:this.data.totalNum
+      })
+      // console.log(this)
+    }
+  },
+  pagelifetimes:{
+    show(){
+      console.log('header.js on show')
+      let cartData = wx.getStorageSync('cartData')
+      for (var i = 0; i < cartData.length; i++) {
+        this.data.totalNum += cartData[i].fix_num
+      }
+      this.setData({
+        totalNum: this.data.totalNum
       })
       console.log(this)
     }

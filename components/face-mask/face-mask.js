@@ -47,17 +47,21 @@ Component({
       wx.request({
         url:'https://h5.watsons.com.cn/activity/specials/info?code=Mask_center_products_index_4&access_token=undefined',
         success(res){
+          if (res.data.data.specials_item_v_o_s){
           _this.setData({
             specialItem: res.data.data.specials_item_v_o_s
           })
+          }
         }
       })
       wx.request({
         url:'https://h5.watsons.com.cn/activity/specials/info?count=8&code=seckill_maskcenter_real&stock_code=&device_id=91aaf9e0-e806-11e9-98fc-ef0320be30e8',
         success(res){
+          if (res.data.data.specials_item_v_o_s){
           _this.setData({
             onsaleItem: res.data.data.specials_item_v_o_s
           })
+          }
         }
       })
     }

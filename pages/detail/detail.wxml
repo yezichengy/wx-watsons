@@ -13,15 +13,15 @@
     <text wx:if="{{num!=0}}">{{num}}</text>
     </view>
   </view>
-  <image src="{{datas.over_image_url}}"></image>
+  <image src="{{datas.over_image_url || datas.image_url}}"></image>
   <view class="tab-pic">
   <text wx:for="{{tabNav}}" wx:key="index" class="{{currentIndex==index?'active':'disactive'}}" bindtap="changeIndex" data-ind="{{index}}">{{item.title}}</text>
   </view>
   <view class="sale-point">
     <view>{{datas.sale_point}}</view>
-    <view>{{datas.item_long_name}}</view>
+    <view>{{datas.item_long_name || datas.item_short_name}}</view>
     <view>
-    ￥<text>{{datas.min_price/100}}</text>
+    ￥<text>{{datas.min_price/100 || datas.promotion_price/100}}</text>
     <text wx:if="{{datas.min_market_price>datas.min_price}}">￥{{datas.min_market_price/100}}</text>
     </view>
   </view>

@@ -12,7 +12,7 @@
     </view>
   </view>
   <scroll-view scroll-x="true" enable-flex="true" class="special-items">
-    <view class="special-item" wx:for="{{list}}" wx:key="index">
+    <view class="special-item" wx:for="{{list}}" wx:key="index" bindtap="toDetail" data-item="{{item}}">
       <view>
       <image src="{{item.image_url}}"></image>
       <text>必抢</text>

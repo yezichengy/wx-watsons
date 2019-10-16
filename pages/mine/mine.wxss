@@ -91,8 +91,38 @@
   line-height:90rpx;
   border-radius:50rpx;
   margin:0 auto;
+  margin-bottom:20rpx;
 }
 input{
   border:2rpx solid #eee;
   border-radius:10rpx;
+}
+.userinfo{
+  width:100%;
+  height:470rpx;
+  display:flex;
+  flex-flow:column wrap;
+  justify-content:center;
+  align-items:center;
+  /* background-image:url('https://asset.watsons.com.cn/h5/static/images/member/daytime/b076c715779ea5d69467646fc.png'); */
+  background-color:#59dac5;
+  position:relative;
+}
+.userinfo>image{
+  width:135rpx;
+  height:135rpx;
+  margin:0 auto;
+  /* margin-top:150rpx; */
+  margin-bottom:40rpx;
+}
+.userinfo>view{
+  /* margin:0 auto; */
+  color:#fff;
+  font-size:30rpx;
+}
+.userinfo>text{
+  position:absolute;
+  top:10rpx;
+  right:10rpx;
+  color:#fff;
 }

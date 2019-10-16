@@ -32,6 +32,17 @@ margin-left:20rpx;
 .icon-21,.icon-gouwuchekong{
   font-size:42rpx;
 }
+.icon-21{
+  position:relative;
+}
+.icon-21>image{
+  position:absolute;
+  left:2rpx;
+  top:0rpx;
+  width:44rpx;
+  height:46rpx;
+  border-radius:50%;
+}
 .icon-gouwuchekong{
   position:relative;
 }

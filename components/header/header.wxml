@@ -1,7 +1,8 @@
 <!--components/header/header.wxml-->
 <view >
 <view class="header" >
-<view class="iconfont icon-21" bindtap="toMine"></view>
+<view class="iconfont icon-21" bindtap="toMine">
+<image src="{{userimage}}"></image></view>
 <view   bindtap="toSearch">
 <text class="iconfont icon-sousuo" ></text>
 <text>新人专享</text>
