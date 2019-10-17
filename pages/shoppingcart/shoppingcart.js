@@ -83,11 +83,12 @@ Page({
         allPick: true
       })
     }
+      let pri = this.data.cartDatas[ind].min_app_price || this.data.cartDatas[ind].promotion_price
     if(this.data.cartDatas[ind].item_type){
-      this.data.totalPrice += this.data.cartDatas[ind].min_app_price * this.data.cartDatas[ind].fix_num
+      this.data.totalPrice += pri * this.data.cartDatas[ind].fix_num
       this.data.totalNum += this.data.cartDatas[ind].fix_num
     }else{
-      this.data.totalPrice -= this.data.cartDatas[ind].min_app_price * this.data.cartDatas[ind].fix_num
+      this.data.totalPrice -= pri * this.data.cartDatas[ind].fix_num
       this.data.totalNum -= this.data.cartDatas[ind].fix_num
     }
     this.setData({
@@ -104,7 +105,8 @@ Page({
     let n = 0;
     if(this.data.allPick){
       for (let i = 0; i < this.data.cartDatas.length; i++) {
-        m += this.data.cartDatas[i].min_app_price * this.data.cartDatas[i].fix_num
+        let pri = this.data.cartDatas[i].min_app_price || this.data.cartDatas[i].promotion_price
+        m += pri * this.data.cartDatas[i].fix_num
         n += this.data.cartDatas[i].fix_num
       }
       this.setData({
@@ -144,7 +146,8 @@ Page({
     let n = 0;
     if (this.data.allPick) {
       for (let i = 0; i < this.data.cartDatas.length; i++) {
-        m += this.data.cartDatas[i].min_app_price * this.data.cartDatas[i].fix_num
+      let pri = this.data.cartDatas[i].min_app_price || this.data.cartDatas[i].promotion_price
+        m += pri * this.data.cartDatas[i].fix_num
         n += this.data.cartDatas[i].fix_num
       }
       this.setData({
@@ -167,7 +170,8 @@ Page({
     let n = 0;
     if (this.data.allPick) {
       for (let i = 0; i < this.data.cartDatas.length; i++) {
-        m += this.data.cartDatas[i].min_app_price * this.data.cartDatas[i].fix_num
+        let pri = this.data.cartDatas[i].min_app_price || this.data.cartDatas[i].promotion_price
+        m += pri * this.data.cartDatas[i].fix_num
         n += this.data.cartDatas[i].fix_num
       }
       this.setData({
@@ -199,7 +203,8 @@ Page({
     let n = 0;
     if (this.data.allPick) {
       for (let i = 0; i < this.data.cartDatas.length; i++) {
-        m += this.data.cartDatas[i].min_app_price * this.data.cartDatas[i].fix_num
+        let pri = this.data.cartDatas[i].min_app_price || this.data.cartDatas[i].promotion_price
+        m += pri * this.data.cartDatas[i].fix_num
         n += this.data.cartDatas[i].fix_num
       }
       this.setData({
@@ -237,7 +242,8 @@ Page({
     })
     let cartData = wx.getStorageSync('cartData')
     for(let i=0;i<cartData.length;i++){
-      this.data.totalPrice += cartData[i].min_app_price * cartData[i].fix_num
+      let pri =cartData[i].min_app_price || cartData[i].promotion_price
+      this.data.totalPrice += pri * cartData[i].fix_num
       this.data.totalNum += cartData[i].fix_num
     }
     this.setData({
