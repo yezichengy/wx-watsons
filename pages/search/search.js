@@ -21,7 +21,7 @@ Page({
     this.setData({
       nowSearch:value.detail.value
     })
-    let word = value.detail.value
+    let word = encodeURIComponent(value.detail.value)
     if(word.length>0){
       wx.request({
         url: 'https://h5.watsons.com.cn/search/suggest?word=' + word,
