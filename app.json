@@ -3,9 +3,7 @@
     "pages/index/index",
     "pages/search/search",
     "pages/logs/logs",
-    "pages/vip/vip",
     "pages/mine/mine",
-    "pages/find/find",
     "pages/shoppingcart/shoppingcart",
     "pages/detail/detail"
   ],
