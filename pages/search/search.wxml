@@ -11,6 +11,6 @@
   <view class="search-result">
     <view wx:for="{{result}}" wx:key="index">
       {{item.word}}
-    </view> 
+    </view>
   </view>
 </view>

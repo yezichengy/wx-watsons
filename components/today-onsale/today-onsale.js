@@ -18,21 +18,27 @@ Component({
   },
   lifetimes:{
     attached(){
-        let _this = this
-      let timer = setInterval(function () {
+      let _this = this
+      setInterval(function () {
         // 获取倒计时
-        let date = new Date()
-        let dates = date.toString().substring(8, 10)
-        dates = parseInt(dates)
-        dates++;
-        dates = dates[1] ? dates : '0' + dates
-        dates = '2019/10/' + dates + ' 00:00:00'
-        let countDown = new Date(new Date(dates).valueOf() - new Date().valueOf())
+        let date = new Date().toString().replace(/\d+:\d+:\d+/, '23:59:59')
+        // console.log(date)
+        let countDown = new Date(new Date(date).valueOf() - new Date().valueOf())
+        // console.log(countDown)
+        let tmr = new Date().getHours()
+        if(tmr>8){
         _this.setData({
-          hours: (countDown.getHours() - 8).toString(),
+          hours: (countDown.getHours() -8).toString(),
           minutes: countDown.getMinutes().toString(),
           seconds: countDown.getSeconds().toString()
         })
+        }else if(tmr<8){
+          _this.setData({
+            hours: (countDown.getHours() +24).toString(),
+            minutes: countDown.getMinutes().toString(),
+            seconds: countDown.getSeconds().toString()
+          })
+        }
       }, 1000)
     }
   },
